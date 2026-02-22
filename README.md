@@ -6,6 +6,7 @@ This project implements a Reinforcement Learning agent using Q-learning to solve
 
 The agent was trained from scratch without using pre-built RL libraries. Training was limited to 1000 episodes.
 
+
 Algorithm Used: Q-Learning
 
 Q-learning is a model-free, off-policy reinforcement learning algorithm.
@@ -13,6 +14,7 @@ Q-learning is a model-free, off-policy reinforcement learning algorithm.
 It updates a Q-table using the Temporal Difference (TD) update rule:
 
 Q(s, a) ← Q(s, a) + α [ r + γ max Q(s', a') − Q(s, a) ]
+
 
 Why Q-learning was chosen:
 
@@ -25,6 +27,7 @@ Tabular learning is efficient and converges within 1000 episodes
 No neural network is required for this environment
 
 Exploration was handled using an epsilon-greedy strategy.
+
 
 Hyperparameters
 
@@ -42,6 +45,7 @@ Training episodes: 1000
 
 Max steps per episode: 100
 
+
 Results
 
 Evaluation over 100 test episodes:
@@ -53,12 +57,14 @@ The trained agent significantly outperformed the random baseline, demonstrating 
 
 (If you saved the reward curve plot)
 
+
 Slippery Mode
 
 Training was conducted with is_slippery=True, meaning the environment is stochastic.
 This increases difficulty because actions may not always move the agent in the intended direction.
 
 Performance in slippery mode demonstrates robustness under uncertainty.
+
 
 Reflection
 
@@ -81,6 +87,3 @@ Once the agent experienced successful trajectories, performance improved steadil
 
 
 
-.
-
-Now go open GitHub and do exactly those clicks. Once you create it once, you’ll never be confused about this again.
